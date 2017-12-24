@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="main.css" rel="stylesheet" media="all">
+<meta name="description" content="ICNet for Real-Time Semantic Segmentation on High-Resolution Images" />
+<meta name="keywords" content="Semantic Segmentation, Real-Time">
+<script>
+function buttonSwitch(id, text)
+{
+	old_src = document.getElementById(id).src;
+	ind = old_src.lastIndexOf('/');
+	document.getElementById(id).src = old_src.substr(0,ind+1) + text;
+}
+
+</script>
+<title>ICNet for Real-Time Semantic Segmentation on High-Resolution Images</title>
+</head>
+
+<body>
+
+<div id="top_arrow" style="position: fixed; bottom: 10px; right: 10px;">
+<a href="#title">
+<img src="./figures/top_arrow.jpg" style="border: 0pt none ; width: 26px; height: 32px;"/></a>
+</div>
+
+<h2 id="title" class="auto-style1">ICNet for Real-Time Semantic Segmentation on High-Resolution Images</h2>
+
+<p class="auto-style7"  align="center">
+	<a href="https://hszhao.github.io/" target="_blank">Hengshuang Zhao</a>
+	<sup>1</sup>
+	&nbsp;&nbsp;&nbsp;
+	Xiaojuan Qi
+	<sup>1</sup>
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://xiaoyongshen.me/" target="_blank">Xiaoyong Shen</a>
+	<sup>1</sup>
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://shijianping.me/" target="_blank">Jianping Shi</a>
+	<sup>2</sup>
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://www.cse.cuhk.edu.hk/leojia/" target="_blank">Jiaya Jia</a>
+	<sup>1</sup>
+	&nbsp;&nbsp;&nbsp;
+</p>
+
+<p class="auto-style7"  align="center">
+<sup>1</sup>
+The Chinese Univeristy of Hong Kong&nbsp;&nbsp;&nbsp;&nbsp;
+<sup>2</sup>
+Sensetime Group Limited
+</p>
+<!--<p class="auto-style7"  align="center">&nbsp;&nbsp;&nbsp; </p>-->
+<p align=left>&nbsp;</p>
+<p align="center">
+<table style="width:960px" align="center">
+<tr>
+	<td><img width=960px alt="" src="figures/icnet.png"></td>	
+</tr>
+<tr>
+	<td><p class="auto-style5">Figure 1. Our image cascade network (ICNet). Numbers in parentheses are feature map size ratios to the full-resolution input. Operations are highlighted in brackets. ‘SWC’ in the braces stands for sharing weights and computation of several convolution layers in top and middle branches. The final upsampling is only used during testing.</p></td>
+</tr>
+</table>
+
+<p class="style2"><strong><span class="auto-style6">Abstract</span></strong></p>
+<p class="auto-style5">We focus on the challenging task of realtime semantic segmentation in this paper. It finds many practical applications and yet is with fundamental difficulty of reducing a large portion of computation for pixel-wise label inference. We propose an compressed-PSPNet-based image cascade network (ICNet) that incorporates multi-resolution branches under proper label guidance to address this challenge. We provide in-depth analysis of our framework and introduce the cascade feature fusion to quickly achieve high-quality segmentation. Our system yields realtime inference on a single GPU card with decent quality results evaluated on challenging Cityscapes dataset.
+</p>
+
+<p class="auto-style5">&nbsp;</p>
+<p id="downloads", class="auto-style4"><strong>Downloads</strong></p>
+<table cellSpacing=4 cellPadding=2 border=0 style="width: 90%">
+<tr COLSPAN="2">
+	<td align="center" valign="center">
+		<img style="padding:0; clear:both; " src="figures/paper_thumbnail.png" align="middle" alt="Snapshot for paper" class="pdf" width="200" />
+	</td>
+	<td align="left" class="auto-style5">"ICNet for Real-Time Semantic Segmentation on High-Resolution Images&quot;<br>
+	Hengshuang Zhao, Xiaojuan Qi, Xiaoyong Shen, Jianping Shi, Jiaya Jia.<br>
+	<em>Technical report</em> (<b>arXiv</b>), 2017</br>
+	<img alt="" height="32" src="figures/pdf.jpg" width="31">&nbsp;&nbsp;[<a href="https://arxiv.org/abs/1704.08545">Paper</a>]<br><br>
+	<img alt="" height="32" src="figures/github.jpg" width="31">&nbsp;&nbsp;[<a href="https://github.com/hszhao/ICNet">Code</a>]<br><br>
+	</td>
+	</tr>
+</table>
+<br>
+
+<p class="auto-style5">&nbsp;</p>
+<p id="video", class="auto-style4"><strong>Video</strong></p>
+<p class="auto-style5">Demo video processed by ICNet on cityscapes dataset:</p>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/qWl9idsCuLQ" frameborder="0" allowfullscreen></iframe>
+
+<p class="auto-style1"><font color="#999999">Last update: April. 28, 2017</font></p>
+
+</body>
+
+</html>

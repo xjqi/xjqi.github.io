@@ -33,7 +33,7 @@
 				<div id="toptitle">
 					<h1>Xiaojuan Qi &nbsp; <h1>
 				</div>
-
+                            
 				<h3>Ph.D. Student (since Fall 2014)</h3>
 				<p>
 					Rm 1026, Ho Sin-Hang Engineering Building </br>
@@ -41,7 +41,8 @@
 					The Chinese University of Hong Kong </br>
 					Shatin, N.T., Hong Kong</br>
 					</br>
-					Email: <a href="mailto:xjqi@cse.cuhk.edu.hk">xjqi [at] cse.cuhk.edu.hk</a>
+					Email: <a href="mailto:xjqi@cse.cuhk.edu.hk">xjqi [at] cse.cuhk.edu.hk</a><br>
+                                    <h3><a href="xiaojuanqi.pdf">[Curriculum Vitae (CV)]</a><h3>
 				</p>
 				<!--<p>
 					<a href="https://github.com/hszhao"><img src="pics/github.png" height="30px"></a>
@@ -63,14 +64,34 @@
 </p>
 <p>Before that, I got the B.Eng degree in Electronic Science and Technology at <a href = "http://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a> in 2014. </p>
 
-<h2>Selected Publications <!--(<a href="http://scholar.google.com/citations?user=2wrS35MAAAAJ&hl=en&oi=ao">Google Scholar</a>)--></h2>
+<h2>Selected Publications [<a href="https://scholar.google.com/citations?hl=en&user=bGn0uacAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>]</h2>
 <ul>
+<li>
+<a href="geonet.pdf">GeoNet: Geometric Neural Network for Joint Depth and Surface Normal Estimation, </br></a>
+<b>Xiaojuan Qi</b>, Renjie Liao, Zhengzhe Liu, Raquel Urtasun, Jiaya Jia</br>
+    IEEE International Conference on Computer Vision  and Pattern Recognition(<b>CVPR</b>), 2018. </br>
+<p style="margin-top:3px"></p>
+  </li>
+
+<li>
+<a href="SIMS.pdf">Semi-parametric Image Synthesis, </br></a>
+<b>Xiaojuan Qi</b>, Qifeng Chen, Jiaya Jia, Vladlen Koltun</br>
+    IEEE International Conference on Computer Vision  and Pattern Recognition(<b>CVPR</b>), 2018. <b><font color="red">[Oral]</font></b> </br>
+<p style="margin-top:3px"></p>
+  </li>
+<li>
+<a href="referseg.pdf">Referring Image Segmentation via Recurrent Refinement Networks, </br></a>
+Ruiyu Li, Kaican Li, Yi-Chun Kuo, Michelle Shu, <b>Xiaojuan Qi</b>, Xiaoyong Shen, Jiaya Jia</br>
+    IEEE International Conference on Computer Vision  and Pattern Recognition(<b>CVPR</b>), 2018. <b><font color="red">[Oral]</font></b> </br>
+<p style="margin-top:3px"></p>
+  </li>
 <li>
 <a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Qi_3D_Graph_Neural_ICCV_2017_paper.pdf">3D Graph Neural Networks for RGBD Semantic Segmentation,</br></a>
 <b>Xiaojuan Qi</b>, Renjie Liao, Jiaya Jia, Sanja Fidler, Raquel Urtasun</br>
     IEEE International Conference on Computer Vision (<b>ICCV</b>), 2017. <b><font color="red">[Oral]</font></b> </br>
 <p style="margin-top:3px"></p>
   </li>
+
   <li>
     <a href="https://arxiv.org/pdf/1704.08545.pdf">ICNet for Real-Time Semantic Segmentation on High-Resolution Images,</br></a>
     Hengshuang Zhao, <b> Xiaojuan Qi</b>, Xiaoyong Shen, Jianping Shi, Jiaya Jia</br>
@@ -80,9 +101,18 @@
   </li>
 
   <li>
+    <a href="https://ac.els-cdn.com/S1361841516302043/1-s2.0-S1361841516302043-main.pdf?_tid=8f7ff654-0f58-4d94-885a-b47a9ed33d35&acdnat=1520051222_7afbebf55c30bc5eda9d74cec1e18641">DCAN: Deep Contour-aware Networks for Object Instance Segmentation from Histology Images,</br></a>
+    Hao Chen, <b> Xiaojuan Qi</b>, Lequan Yu, Qi Dou, Jing Qi, Pheng-Ann Heng</br>
+    Journal of Medical Image Analysis (<b>MIA</b>), 2017. 
+    <p style="margin-top:3px"></p>  
+    </p>
+  </li>
+
+  <li>
     <a href="https://arxiv.org/pdf/1612.01105.pdf">Pyramid Scene Parsing Network,</br></a>
     Hengshuang Zhao, Jianping Shi, <b>Xiaojuan Qi</b>, Xiaogang Wang, Jiaya Jia</br>
-    IEEE International Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017.  [<a href="https://hszhao.github.io/projects/pspnet/index.html">Project & Code</a>]
+    IEEE International Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017.  </br>
+    [<a href="https://hszhao.github.io/projects/pspnet/index.html">Project & Code</a>]
     <p style="margin-top:3px">
     </p>      
   </li>
@@ -143,7 +173,7 @@ Topic: RGBD Semantic Segmentation</br>
 </ul>
 <h2>Professional Activities</h2>
 <ul>
-<li>Conference Review: ICCV 2017 (Outstanding Reviewer), CVPR 2018. </li>
+<li>Conference Review: ICCV 2017 (Outstanding Reviewer), CVPR 2018, IJCAI 2018.</li>
 <li>Journal Review: Pattern Recognition.
 </ul>
 <h2>Teaching</h2>

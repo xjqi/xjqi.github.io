@@ -82,7 +82,7 @@
 <li>
 <a href="referseg.pdf">Referring Image Segmentation via Recurrent Refinement Networks, </br></a>
 Ruiyu Li, Kaican Li, Yi-Chun Kuo, Michelle Shu, <b>Xiaojuan Qi</b>, Xiaoyong Shen, Jiaya Jia</br>
-    IEEE International Conference on Computer Vision  and Pattern Recognition(<b>CVPR</b>), 2018. <b><font color="red">[Oral]</font></b> </br>
+    IEEE International Conference on Computer Vision  and Pattern Recognition(<b>CVPR</b>), 2018.</font></b> </br>
 <p style="margin-top:3px"></p>
   </li>
 <li>
@@ -173,7 +173,7 @@ Topic: RGBD Semantic Segmentation</br>
 </ul>
 <h2>Professional Activities</h2>
 <ul>
-<li>Conference Review: ICCV 2017 (Outstanding Reviewer), CVPR 2018, IJCAI 2018.</li>
+<li>Conference Review: ICCV 2017 (Outstanding Reviewer), CVPR 2018, IJCAI 2018, ECCV 2018.</li>
 <li>Journal Review: Pattern Recognition.
 </ul>
 <h2>Teaching</h2>

@@ -24,11 +24,7 @@
 
 <script>
     const labMembers = [
-        { name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
-	{ name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
-	{ name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
-	{ name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
-	{ name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
+        { name: 'Xiaojuan Qi', position: 'Principal Investigator', img: '1.png' },
         // Add the other lab members with their names, positions, and image file names
     ];
 
@@ -55,6 +51,56 @@
         labMembersSection.innerHTML = generateLabMembersHTML();
     });
 </script>
+
+<style>
+.lab-members ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lab-members li {
+  flex: 1;
+  min-width: calc(100% / 4 - 30px);
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.member-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.member-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .lab-members li {
+    min-width: calc(100% / 3 - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .lab-members li {
+    min-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .lab-members li {
+    min-width: 100%;
+  }
+}
+</style>
 
 </head>
 <body >

@@ -24,7 +24,7 @@
 
 <script>
     const labMembers = [
-        { name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
+        { name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg', url: 'https://xjqi.github.io/' },
 	{ name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
 	{ name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
 	{ name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg' },
@@ -48,7 +48,7 @@
                     <img src="${member.img}" alt="Lab member ${member.name}" />
                 </div>
                 <div class="member-info">
-                    <h3>${member.name}</h3>
+                    <h3><a href=${member.url}>${member.name}</h3>
                     <p>${member.position}</p>
                 </div>
             </li>`;

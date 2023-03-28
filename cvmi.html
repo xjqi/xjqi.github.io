@@ -24,25 +24,25 @@
 
 <script>
     const labMembers = [
-        { name: 'Xiaojuan Qi', position: 'PI', img: 'pics/xiaojuan.jpg' },
-	{ name: 'Baoheng Cheung', position: 'Ph.D-2022 (w/ Hayden Kwok-Hay So)', img: 'pics/baoheng.jpg' },
-	{ name: 'Chixiang Lu', position: 'Ph.D-2022 (w/ Haibo Jiang)', img: 'pics/chixiang.jpg'},
-	{ name: 'Chuofan Ma', position: 'Ph.D-2022 (HKU-PS)', img: 'pics/chuofan.jpeg' },
-	{ name: 'Jiahui Liu', position: 'MPhil-2022', img: 'pics/jiahui.png' },
-	{ name: 'Shizhen Zhao', position: 'Ph.D-2022', img: 'pics/shizhen.jpg' },
-	{ name: 'Xiaoyang Lyu', position: 'Ph.D-2022 (HKPF)', img: 'pics/xiaoyang.jpg' },
-	{ name: 'Xin Yu', position: 'Ph.D-2022', img: 'pics/yuxin.jpg' },
-	{ name: 'Yingxian Chen', position: 'Ph.D-2022 (w/ Yik-Chung Wu)', img: 'pics/yingxian.jpg' },
-	{ name: 'Anlin Zheng', position: 'Ph.D-2021', img: 'pics/anlin.jpg' }, 
-	{ name: 'Jianhui Liu', position: 'Ph.D-2021', img: 'pics/jianhui.jpg' },
-	{ name: 'Jiaqi Zhang', position: 'Ph.D-2021 (w/ Jiang Liu)', img: 'pics/jiaqi.jpg' },
-	{ name: 'Ruifei He', position: 'Ph.D-2021 (HKPF)', img: 'pics/ruifei.jpg' },
-	{ name: 'Xin Wen', position: 'Ph.D-2021', img: 'pics/wenxin.jpg' },
-	{ name: 'Jihan Yang', position: 'Ph.D-2020', img: 'pics/jihan.jpg' },
-	{ name: 'Peng Dai', position: 'Ph.D-2020', img: 'pics/daipeng.jpeg' },
-	{ name: 'Runyu Ding', position: 'Ph.D-2020 (HKPF)', img: 'pics/runyu.jpg' },
-	{ name: 'Xiuzhe Wu', position: 'Ph.D-2020', img: 'pics/xiuzhe.jpg' },
-	{ name: 'Andong Wang', position: 'Ph.D-2019 (HKPF) (w/ Wei-Ning Lee)', img: 'pics/andong.jpg' },
+        { name: 'Xiaojuan Qi', position: 'Principal Investigator', img: 'pics/xiaojuan.jpg', url: 'https://xjqi.github.io/'},
+        { name: 'Baoheng Cheung', position: 'Ph.D-2022 (w/ Hayden Kwok-Hay So)', img: 'pics/baoheng.jpg', url: 'https://casr.eee.hku.hk/author/baoheng-zhang/'},
+        { name: 'Chixiang Lu', position: 'Ph.D-2022 (w/ Haibo Jiang)', img: 'pics/chixiang.jpg', url: 'https://dblp.org/pid/289/0177.html'},
+        { name: 'Chuofan Ma', position: 'Ph.D-2022 (HKU-PS)', img: 'pics/chuofan.jpeg', url: 'https://github.com/machuofan'},
+        { name: 'Jiahui Liu', position: 'MPhil-2022', img: 'pics/jiahui.png', url: 'https://github.com/jliu-ac'},
+        { name: 'Shizhen Zhao', position: 'Ph.D-2022', img: 'pics/shizhen.jpg', url: 'https://github.com/Shizhen-ZHAO'},
+        { name: 'Xiaoyang Lyu', position: 'Ph.D-2022 (HKPF)', img: 'pics/xiaoyang.jpg', url: 'https://github.com/shawLyu'},
+        { name: 'Xin Yu', position: 'Ph.D-2022', img: 'pics/yuxin.jpg', url: 'https://scholar.google.com/citations?user=JX8kSoEAAAAJ'},
+        { name: 'Yingxian Chen', position: 'Ph.D-2022 (w/ Yik-Chung Wu)', img: 'pics/yingxian.jpg', url: 'https://scholar.google.com.hk/citations?user=Hc2szwoAAAAJ'},
+        { name: 'Anlin Zheng', position: 'Ph.D-2021', img: 'pics/anlin.jpg', url: 'https://dblp.org/pid/208/4164.html'}, 
+        { name: 'Jianhui Liu', position: 'Ph.D-2021', img: 'pics/jianhui.jpg', url: 'https://jianhui-liu.netlify.app/'},
+        { name: 'Jiaqi Zhang', position: 'Ph.D-2021 (w/ Jiang Liu)', img: 'pics/jiaqi.jpg' },
+        { name: 'Ruifei He', position: 'Ph.D-2021 (HKPF)', img: 'pics/ruifei.jpg', url: 'https://scholar.google.com/citations?user=P7IL0hkAAAAJ'},
+        { name: 'Xin Wen', position: 'Ph.D-2021', img: 'pics/wenxin.jpg', url: 'https://wen-xin.info/'},
+        { name: 'Jihan Yang', position: 'Ph.D-2020', img: 'pics/jihan.jpg', url: 'https://jihanyang.github.io/' },
+        { name: 'Peng Dai', position: 'Ph.D-2020', img: 'pics/daipeng.jpeg', url: 'https://github.com/daipengwa'},
+        { name: 'Runyu Ding', position: 'Ph.D-2020 (HKPF)', img: 'pics/runyu.jpg', url: 'https://dingry.github.io/'},
+        { name: 'Xiuzhe Wu', position: 'Ph.D-2020', img: 'pics/xiuzhe.jpg', url: 'https://www.semanticscholar.org/author/Xiuzhe-Wu/8654147'},
+        { name: 'Andong Wang', position: 'Ph.D-2019 (HKPF) (w/ Wei-Ning Lee)', img: 'pics/andong.jpg', url: 'https://scholar.google.com/citations?user=honY7pYAAAAJ'},
         // Add the other lab members with their names, positions, and image file names
     ];
 
@@ -55,8 +55,7 @@
                     <img src="${member.img}" alt="Lab member ${member.name}" />
                 </div>
                 <div class="member-info">
-                    <!--<h3><a href=${member.url}>${member.name}</h3>-->
-		    <h3><a href=${member.url}>${member.name}</h3>
+                    <h3><a href=${member.url}>${member.name}</a></h3>
                     <p>${member.position}</p>
                 </div>
             </li>`;
@@ -90,7 +89,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .member-photo img {
@@ -133,7 +132,7 @@
 
 
 
-<h2>Computer Vision and Machine Intelligence Lab (CVMI Lab)</h2>
+<h2><a href="https://github.com/CVMI-Lab">Computer Vision and Machine Intelligence Lab (CVMI Lab)</a></h2>
 <p>
  Our lab is dedicated to advancing computer vision, deep learning, and artificial intelligence. Our aim is to push visual intelligence forward towards open-world environments. We believe it has the potential to transform future manufacturing, robotics, autonomous driving, virtual reality and more, thereby generate positive impacts on our lives. Currently, we are interested in exploring the following topics:	
 </p>

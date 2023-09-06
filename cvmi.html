@@ -70,6 +70,41 @@
     });
 </script>
 
+  <script>
+    const labMembers = [
+        { name: 'Wei Huang', position: 'Ph.D.-2023 (w/ Shiming Zhang)', img: 'pics/wei.jpg', url: 'https://scholar.google.com/citations?user=rZVUlPAAAAAJ&hl=zh-CN'},
+        { name: 'Tonghuan Xiao', position: 'MPhil-2023 (w/zhiqin Chu)', img: 'pics/tonghuan.jpg', url: 'https://xjqi.github.io/cvmi.html'},
+        { name: 'Baoheng Cheung', position: 'Ph.D.-2022 (w/ Hayden Kwok-Hay So)', img: 'pics/baoheng.jpg', url: 'https://casr.eee.hku.hk/author/baoheng-zhang/'},
+        { name: 'Chixiang Lu', position: 'Ph.D.-2022 (w/ Haibo Jiang)', img: 'pics/chixiang.jpg', url: 'https://dblp.org/pid/289/0177.html'},
+        { name: 'Yingxian Chen', position: 'Ph.D.-2022 (w/ Yik-Chung Wu)', img: 'pics/yingxian.jpg', url: 'https://scholar.google.com.hk/citations?user=Hc2szwoAAAAJ'},
+        { name: 'Andong Wang', position: 'Ph.D.-2019 (HKPF) (w/ Wei-Ning Lee)', img: 'pics/andong.jpg', url: 'https://scholar.google.com/citations?user=honY7pYAAAAJ'},
+        // Add the other lab members with their names, positions, and image file names
+    ];
+
+    function generateLabMembersHTML() {
+        let labMembersHTML = '<div class="lab-members"><ul>';
+        labMembers.forEach((member, i) => {
+            labMembersHTML += `
+            <li>
+                <div class="member-photo">
+                    <img src="${member.img}" alt="Lab member ${member.name}" />
+                </div>
+                <div class="member-info">
+                    <h3><a href=${member.url}>${member.name}</a></h3>
+                    <p>${member.position}</p>
+                </div>
+            </li>`;
+        });
+        labMembersHTML += '</ul></div>';
+        return labMembersHTML;
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const labMembersSection = document.getElementById('lab-members-co-supervise-section');
+        labMembersSection.innerHTML = generateLabMembersHTML();
+    });
+</script>
+
 <style>
 
 .lab-members ul {
@@ -168,6 +203,9 @@ Six papers are accepted to NeurIPS 2022. Congratulations to my students and coll
 </ul>
 <h2>Lab Members</h2>
 <div id="lab-members-section"></div>
+<h2>Lab Members (co-supervised students who work closely with me)</h2>
+<div id="lab-members-co-supervise-section"></div>
+
 
 
 <script>
